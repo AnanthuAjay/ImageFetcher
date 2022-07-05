@@ -1,0 +1,130 @@
+/* All the flex-related properties are used to help position things on the page */
+*{
+    box-sizing: border-box;
+  }
+  body,html{
+  /*The padding and margin here are 0 so that we don't see any white space around the edges of the header and footer*/
+    padding:0;
+    margin:0;
+    background-color: white;
+  }
+  .section__title {
+        margin-bottom: .25em;
+    }
+
+    .section__title--intro {
+        font-weight: var(--fw-reg);
+    }
+    
+.intro {
+    position: fixed;
+}
+
+  body{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  header,footer{
+    margin:0;
+    padding:0;
+    height:200px;
+    width:auto;
+    padding: 20px 10px;
+    background-color:rgba(85, 127, 205, 0.829);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+  }
+  h1{
+    text-align:center;
+    font-size:40px;
+  }
+  
+
+.section__title {
+  margin-bottom: .25em;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+.section__subtitle--work {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+}
+
+.portfolio__item {
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: 
+      transform 750ms cubic-bezier(.5, 0, .5, 1),
+      opacity 250ms linear;
+}
+
+  #img-box{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:0px;
+    width: 100%;
+  }
+  .search-box{ 
+    background-color: #f1f19b;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  .search-box:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #search{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: rgb(46, 217, 137);
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+
+}
+  #footer-text{
+    text-align:center;
+    font-size:25px;
+  }
+
+  .my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;    
+}

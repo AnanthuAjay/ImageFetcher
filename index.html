@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Fetcher Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <!-- My header here is just for presentation-->
+   <header>
+     <h1> Image Fetcher</h1>
+   </header>
+   <div class="search-box">
+    <input type="text" id="search" placeholder="Type to See">
+    <button onclick="activate()">SUBMIT</button>
+   </div>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Results</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of Images for Given Query</p>
+        
+       
+                    <div id = "img-box">
+                        <!-- I will be populating this div with images from my unsplash api call-->
+                    </div>
+    </section>
+    
+
+   
+   <!-- My footer here is just for presentation-->
+    <footer class="footer">
+        <p id = "footer-text"> <span style = "text-decoration:underline;"> Designed & Developed by :</span> Ananthu Ajay</p>
+    </footer>
+</body>
+</html>
